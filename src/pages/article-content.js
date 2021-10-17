@@ -1,0 +1,33 @@
+const articles = [
+    {
+        name: 'learn-react',
+        title: 'The fastest way to learn React',
+        content: [
+            `Ut et posuere elit, ut posuere sem. Praesent id leo a nisi vestibulum iaculis sed in dui. Ut ac libero vel purus iaculis consectetur. Morbi suscipit massa vitae cursus hendrerit. Suspendisse potenti. Ut varius lacus placerat dolor iaculis, nec varius metus lacinia. Cras nunc risus, sodales vitae accumsan a, semper gravida tellus. Cras volutpat tortor sed sem elementum ornare. Donec gravida lorem vel nisi gravida convallis. Suspendisse potenti. Mauris dignissim, leo eu malesuada sodales, ligula eros consequat risus, id mollis ex purus id nunc.`,
+            `Etiam convallis dolor ut urna elementum sollicitudin. Donec scelerisque aliquet lectus. Curabitur ac diam vitae orci ullamcorper euismod vitae fringilla risus. Duis eget tellus felis. Donec hendrerit erat eu mi bibendum, in vestibulum massa venenatis. Integer luctus orci ut facilisis blandit. Nunc ullamcorper tellus nibh, sed pharetra mi sagittis eu. Proin auctor lorem quis nisl tempor, quis consequat quam tincidunt. Proin sit amet posuere ante, at gravida leo. Aenean accumsan, mauris eu volutpat mollis, ante ex posuere erat, lobortis tempus sapien velit ac elit. Praesent facilisis sem nec leo ultricies pellentesque.`,
+            `Donec sapien lorem, suscipit vel orci nec, fermentum tristique lacus. Aliquam libero mi, viverra et tincidunt id, pharetra sed dui. In hac habitasse platea dictumst. Phasellus a neque ac dolor auctor egestas quis aliquam enim. Integer rhoncus mi ut lorem cursus, nec consectetur elit tristique. Donec nisi risus, laoreet sit amet purus dictum, tincidunt ornare tortor. Duis dignissim enim eget est commodo ultricies. Ut sed lorem tortor.`
+        ]
+    },
+    {
+        name: 'algorithms',
+        title: 'How to pass Algorithms and Data Structures exam?',
+        content: [
+            `Ut et posuere elit, ut posuere sem. Praesent id leo a nisi vestibulum iaculis sed in dui. Ut ac libero vel purus iaculis consectetur. Morbi suscipit massa vitae cursus hendrerit. Suspendisse potenti. Ut varius lacus placerat dolor iaculis, nec varius metus lacinia. Cras nunc risus, sodales vitae accumsan a, semper gravida tellus. Cras volutpat tortor sed sem elementum ornare. Donec gravida lorem vel nisi gravida convallis. Suspendisse potenti. Mauris dignissim, leo eu malesuada sodales, ligula eros consequat risus, id mollis ex purus id nunc.`,
+            `Ut et posuere elit, ut posuere sem. Praesent id leo a nisi vestibulum iaculis sed in dui. Ut ac libero vel purus iaculis consectetur. Morbi suscipit massa vitae cursus hendrerit. Suspendisse potenti. Ut varius lacus placerat dolor iaculis, nec varius metus lacinia. Cras nunc risus, sodales vitae accumsan a, semper gravida tellus. Cras volutpat tortor sed sem elementum ornare. Donec gravida lorem vel nisi gravida convallis. Suspendisse potenti. Mauris dignissim, leo eu malesuada sodales, ligula eros consequat risus, id mollis ex purus id nunc.`,
+            `Etiam convallis dolor ut urna elementum sollicitudin. Donec scelerisque aliquet lectus. Curabitur ac diam vitae orci ullamcorper euismod vitae fringilla risus. Duis eget tellus felis. Donec hendrerit erat eu mi bibendum, in vestibulum massa venenatis. Integer luctus orci ut facilisis blandit. Nunc ullamcorper tellus nibh, sed pharetra mi sagittis eu. Proin auctor lorem quis nisl tempor, quis consequat quam tincidunt. Proin sit amet posuere ante, at gravida leo. Aenean accumsan, mauris eu volutpat mollis, ante ex posuere erat, lobortis tempus sapien velit ac elit. Praesent facilisis sem nec leo ultricies pellentesque.`,
+            `Donec sapien lorem, suscipit vel orci nec, fermentum tristique lacus. Aliquam libero mi, viverra et tincidunt id, pharetra sed dui. In hac habitasse platea dictumst. Phasellus a neque ac dolor auctor egestas quis aliquam enim. Integer rhoncus mi ut lorem cursus, nec consectetur elit tristique. Donec nisi risus, laoreet sit amet purus dictum, tincidunt ornare tortor. Duis dignissim enim eget est commodo ultricies. Ut sed lorem tortor.`
+        ]
+    },
+    {
+        name: 'softaware-engineer',
+        title: 'Everything you should know about UML diagrams',
+        content: [
+            `Ut et posuere elit, ut posuere sem. Praesent id leo a nisi vestibulum iaculis sed in dui. Ut ac libero vel purus iaculis consectetur. Morbi suscipit massa vitae cursus hendrerit. Suspendisse potenti. Ut varius lacus placerat dolor iaculis, nec varius metus lacinia. Cras nunc risus, sodales vitae accumsan a, semper gravida tellus. Cras volutpat tortor sed sem elementum ornare. Donec gravida lorem vel nisi gravida convallis. Suspendisse potenti. Mauris dignissim, leo eu malesuada sodales, ligula eros consequat risus, id mollis ex purus id nunc.`,
+            `Ut et posuere elit, ut posuere sem. Praesent id leo a nisi vestibulum iaculis sed in dui. Ut ac libero vel purus iaculis consectetur. Morbi suscipit massa vitae cursus hendrerit. Suspendisse potenti. Ut varius lacus placerat dolor iaculis, nec varius metus lacinia. Cras nunc risus, sodales vitae accumsan a, semper gravida tellus. Cras volutpat tortor sed sem elementum ornare. Donec gravida lorem vel nisi gravida convallis. Suspendisse potenti. Mauris dignissim, leo eu malesuada sodales, ligula eros consequat risus, id mollis ex purus id nunc.`,
+            `Etiam convallis dolor ut urna elementum sollicitudin. Donec scelerisque aliquet lectus. Curabitur ac diam vitae orci ullamcorper euismod vitae fringilla risus. Duis eget tellus felis. Donec hendrerit erat eu mi bibendum, in vestibulum massa venenatis. Integer luctus orci ut facilisis blandit. Nunc ullamcorper tellus nibh, sed pharetra mi sagittis eu. Proin auctor lorem quis nisl tempor, quis consequat quam tincidunt. Proin sit amet posuere ante, at gravida leo. Aenean accumsan, mauris eu volutpat mollis, ante ex posuere erat, lobortis tempus sapien velit ac elit. Praesent facilisis sem nec leo ultricies pellentesque.`,
+            `Donec sapien lorem, suscipit vel orci nec, fermentum tristique lacus. Aliquam libero mi, viverra et tincidunt id, pharetra sed dui. In hac habitasse platea dictumst. Phasellus a neque ac dolor auctor egestas quis aliquam enim. Integer rhoncus mi ut lorem cursus, nec consectetur elit tristique. Donec nisi risus, laoreet sit amet purus dictum, tincidunt ornare tortor. Duis dignissim enim eget est commodo ultricies. Ut sed lorem tortor.`
+        ]
+    },
+];
+
+export default articles;
