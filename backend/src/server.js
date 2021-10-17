@@ -1,25 +1,27 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-
-const articlesInfo = {
-    'learn-react': {
-        upvotes: 0,
-        comments: [],
-    },
-    'algorithms': {
-        upvotes: 0,
-        comments: [],
-    },
-    'softaware-engineer': {
-        upvotes: 0,
-        comments: [],
-    },
-}
-
+import { MongoClient } from 'mongodb';
 
 const app = express();
 
-app.use(bodyParser.json());
+app.use(express.json());
+
+
+
+app.get('/api/articles/:name', async (req, res) => {
+    try {
+        const articleName = req.params.name;
+
+        const client = await MongoClient.connect('mongodb://localhost:27017', {useNewUrlParser: true});
+        const db = await client.db('my-blog');
+
+        const articleInfo = await db.collection('articles').findOne({ name:  articleName });
+        res.status(200).json(articleInfo);
+
+        client.close();
+    } catch (error) {
+        res.status(500).json({ message: 'Error connecting to database', error});
+    }
+})
 
 app.post('/api/articles/:name/upvote', (req, res) => {
     const articleName = req.params.name;
@@ -36,9 +38,5 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
 
     res.status(200).send(articlesInfo[articleName]);
 })
-
-// app.get('/hello', (req, res) => res.send('Hello!'));
-// app.get('/hello/:name', (req, res) => res.send(`Hello ${req.params.name}`));
-// app.post('/hello', (req, res) => res.send(`Hello ${req.body.name}!`));
 
 app.listen(8000, () => console.log('Listening on port 8000'));
